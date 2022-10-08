@@ -1,0 +1,84 @@
+@import "./variables.scss";
+body {
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+}
+nav {
+    padding: 10px 0%;
+    ul {
+        li {
+            transition-duration: $smooth;
+            &:hover {
+                color: $primary;
+            }
+        }
+        li:last-child {
+            transition-duration: $smooth;
+            background-color: $primary;
+            &:hover {
+                background-color: $primary-hover;
+            }
+        }
+    }
+}
+.hero {
+    background-color: $secondary;
+    button {
+        margin: 30px 0;
+        background-color: $primary;
+        border-radius: 30px;
+        padding: 5px 20px;
+        color: $secondary;
+        font-weight: bolder;
+        transform: $smooth;
+        border: 2px solid transparent;
+        &:hover {
+            border: 2px solid $primary;
+            background-color: $secondary;
+            color: $primary;
+        }
+    }
+}
+.addtocart {
+    margin: 30px 0;
+    button {
+        border: 2px solid $primary;
+        border-radius: 30px;
+        padding: 5px 10px;
+        color: $primary;
+        font-weight: bolder;
+        transform: $smooth;
+        &:hover {
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+}
+
+.checkout-form {
+    display: flex;
+    justify-content: flex-end;
+    input {
+        border: 1px solid $gray;
+        background-color: $pure;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    .Checkout {
+        margin: 30px 0;
+        background-color: $primary;
+        border-radius: 30px;
+        padding: 5px 20px;
+        color: $secondary;
+        font-weight: bolder;
+        transform: $smooth;
+        border: 2px solid transparent;
+        &:hover {
+            border: 2px solid $primary;
+            background-color: $secondary;
+            color: $primary;
+        }
+    }
+}
